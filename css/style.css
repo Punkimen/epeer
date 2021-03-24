@@ -974,7 +974,7 @@ h3.section-title {
 }
 
 .credits__calc::before {
-  content: url(../../img/elipse-blue_1.png);
+  content: url(../img/elipse-blue_1.png);
   display: block;
   position: absolute;
   top: 90px;
@@ -983,7 +983,7 @@ h3.section-title {
 }
 
 .credits__calc::after {
-  content: url(../../img/elipse-blue_1.png);
+  content: url(../img/elipse-blue_1.png);
   display: block;
   position: absolute;
   bottom: 10px;
@@ -1289,7 +1289,7 @@ html .ui-button.ui-state-disabled:hover {
 .online__inner {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
   max-width: 1322px;
   width: 100%;
   margin: 0 auto;
@@ -1435,7 +1435,7 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 .how-container::before {
-  content: url(../../img/elipse-group.png);
+  content: url(../img/elipse-group.png);
   position: absolute;
   right: -135px;
   bottom: -65px;
@@ -1555,7 +1555,7 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 .benefits__item-title::before {
-  content: url("../../img/icon_check.png");
+  content: url("../img/icon_check.png");
   position: absolute;
   left: 0;
 }
@@ -1579,7 +1579,7 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 .repay__inner::before {
-  content: url(../../img/elipse-group.png);
+  content: url(../img/elipse-group.png);
   position: absolute;
   top: -70px;
   left: -140px;
@@ -1772,7 +1772,7 @@ html .ui-button.ui-state-disabled:hover {
   cursor: pointer;
   width: 18px;
   height: 35px;
-  background-image: url(../../img/arrow-slider.png);
+  background-image: url(../img/arrow-slider.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -2004,7 +2004,7 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 .about-contacts__img::before {
-  content: url(../../img/elipse-blue_1.png);
+  content: url(../img/elipse-blue_1.png);
   position: absolute;
   left: -65px;
   bottom: -30px;
@@ -2048,7 +2048,7 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 .about__inner-img::before {
-  content: url(../../img/elipse-blue_1.png);
+  content: url(../img/elipse-blue_1.png);
   position: absolute;
   right: -65px;
   bottom: -30px;
@@ -2199,7 +2199,7 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 .news__calc-img::before {
-  content: url(../../img/elipse-blue_1.png);
+  content: url(../img/elipse-blue_1.png);
   position: absolute;
   right: -65px;
   bottom: -35px;

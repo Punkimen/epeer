@@ -17,7 +17,16 @@ $(document).ready(function () {
         element.height(imgHeidht);
     }
     equalHeightContent($('.online__content'))
-
+    $('.online__content').height(432);
+    const contentHeigh = () => {
+        let mainHeight = $('.instruction__wrapper').height();
+        let titleHeight = $('.instruction-content__title').height() + parseInt($('.instruction-content__title').css('marginBottom'));
+        let headHeight = $('.instruction-content__head').height() + parseInt($('.instruction-content__head').css('marginBottom'));
+        let upperHeight = titleHeight + headHeight;
+        let downHeight = $('.instruction-footer').height();
+        let contentHeight = mainHeight - upperHeight - downHeight - parseInt($('.instruction-content__text').css('paddingBottom'));
+        $('.instruction-content__text').height(contentHeight);
+    }
     $(window).resize(function () {
         let windowWidth = $(window).width();
         contentHeigh();
@@ -72,14 +81,5 @@ $(document).ready(function () {
     })
 
     // slick silder end
-    const contentHeigh = () => {
-        let mainHeight = $('.instruction__wrapper').height();
-        let titleHeight = $('.instruction-content__title').height() + parseInt($('.instruction-content__title').css('marginBottom'));
-        let headHeight = $('.instruction-content__head').height() + parseInt($('.instruction-content__head').css('marginBottom'));
-        let upperHeight = titleHeight + headHeight;
-        let downHeight = $('.instruction-footer').height();
-        let contentHeight = mainHeight - upperHeight - downHeight - parseInt($('.instruction-content__text').css('paddingBottom'));
-        $('.instruction-content__text').height(contentHeight);
-    }
     contentHeigh();
 });
