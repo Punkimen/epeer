@@ -17,7 +17,6 @@ $(document).ready(function () {
         element.height(imgHeidht);
     }
     equalHeightContent($('.online__content'))
-    $('.online__content').height(432);
     const contentHeigh = () => {
         let mainHeight = $('.instruction__wrapper').height();
         let titleHeight = $('.instruction-content__title').height() + parseInt($('.instruction-content__title').css('marginBottom'));
@@ -27,12 +26,13 @@ $(document).ready(function () {
         let contentHeight = mainHeight - upperHeight - downHeight - parseInt($('.instruction-content__text').css('paddingBottom'));
         $('.instruction-content__text').height(contentHeight);
     }
+
     $(window).resize(function () {
         let windowWidth = $(window).width();
         contentHeigh();
         if (windowWidth > 992) {
+            equalHeightContent($('.online__content'))
         }
-        equalHeightContent($('.online__content'))
     })
     $('.accordion__title').on('click', function () {
         $(this).toggleClass('active').next().slideToggle();
@@ -82,4 +82,23 @@ $(document).ready(function () {
 
     // slick silder end
     contentHeigh();
+
+
+
+    const scrollLink = document.querySelectorAll('.scroll-link')
+
+    const smoothScrol = (elememt) => {
+        elememt.forEach(el => {
+            el.addEventListener('click', (e) => {
+                e.preventDefault()
+                const id = e.currentTarget.getAttribute('data-scroll');
+                document.querySelector(id).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                })
+            })
+        })
+    };
+
+    smoothScrol(scrollLink);
 });
