@@ -955,6 +955,7 @@ h3.section-title {
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
+  z-index: 199;
 }
 
 .calc__container:before {
@@ -1007,7 +1008,7 @@ h3.section-title {
   max-width: 630px;
   width: 100%;
   padding: 35px 40px;
-  z-index: 99;
+  z-index: 199;
 }
 
 .credits__calc-btn {
@@ -1059,7 +1060,7 @@ h3.section-title {
   box-sizing: border-box;
   border-radius: 5px;
   color: #333;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 12px;
   font-weight: 400;
   padding: 6px 8px;
