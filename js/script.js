@@ -2,6 +2,7 @@ $(document).ready(function () {
     $('.burger__icon').on('click', function () {
         $(this).toggleClass('active');
         $('.header__mobile').slideToggle();
+        $('body').toggleClass('overlay');
     });
 
     const addActive = (element) => {

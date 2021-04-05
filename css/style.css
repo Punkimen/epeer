@@ -1114,6 +1114,17 @@ h3.section-title {
   left: 5px;
 }
 
+.ui-slider .ui-slider-handle:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+}
+
+
 .ui-slider .ui-slider-handle {
   width: 15px;
   height: 15px;
@@ -2744,6 +2755,36 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 @media (max-width: 767px) {
+  body {
+    padding-top: 74px;
+  }
+
+  body.overlay {
+    overflow: hidden;
+    position: relative;
+  }
+
+  body.overlay::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 998;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 999;
+    box-shadow: 0px 5px 10px rgb(0 0 0 / 50%);
+  }
+
   .header__burger {
     display: block;
   }
