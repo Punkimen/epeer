@@ -1,18 +1,19 @@
 $(document).ready(function () {
+    $('.burger__icon').on('click', function (e) {
 
-    jQuery.preloadImages = function () {
-        for (var i = 0; i < arguments.length; i++) {
-            jQuery("<img>").attr("src", arguments[i]);
-        }
-    };
-    //указываем путь к изображению, которое нужно подгрузить
-    $.preloadImages("../img/online.jpg");
-
-    $('.burger__icon').on('click', function () {
         $(this).toggleClass('active');
         $('.header__mobile').slideToggle();
         $('body').toggleClass('overlay');
     });
+    console.log('work');
+
+    $(document).on('click', function (e) {
+        if (e.target.classList.contains('overlay')) {
+            $('.burger__icon').removeClass('active');
+            $('.header__mobile').slideUp();
+            $('body').removeClass('overlay');
+        }
+    })
 
     const addActive = (element) => {
         element.on('click', function () {

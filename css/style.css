@@ -1330,6 +1330,7 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 .online__content {
+  min-height: 250px;
   max-width: 500px;
 }
 
