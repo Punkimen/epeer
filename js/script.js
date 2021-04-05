@@ -1,4 +1,13 @@
 $(document).ready(function () {
+
+    jQuery.preloadImages = function () {
+        for (var i = 0; i < arguments.length; i++) {
+            jQuery("<img>").attr("src", arguments[i]);
+        }
+    };
+    //указываем путь к изображению, которое нужно подгрузить
+    $.preloadImages("../img/online.jpg");
+
     $('.burger__icon').on('click', function () {
         $(this).toggleClass('active');
         $('.header__mobile').slideToggle();
