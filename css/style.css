@@ -980,6 +980,29 @@ h3.section-title {
   left: -20px;
 }
 
+.calc__calculation {
+  position: relative;
+}
+
+.calc__calculation::before {
+  content: "СКОРО";
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110%;
+  height: 110%;
+  font-size: 100px;
+  line-height: 120px;
+  font-weight: bold;
+  color: #000;
+  background: #4FB6F9;
+  position: absolute;
+  left: -5%;
+  top: 0;
+  border-radius: 10px;
+}
+
 .credits__calc {
   max-width: 460px;
   margin-left: auto;
@@ -3131,5 +3154,9 @@ html .ui-button.ui-state-disabled:hover {
 
   .online__content-title {
     font-size: 16px;
+  }
+
+  .calc__calculation::before {
+    font-size: 80px;
   }
 }
